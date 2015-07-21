@@ -34,6 +34,11 @@
     name: python-pip
     state: latest
 
+- name: install python-virtualenv
+  pacman:
+    name: python-virtualenv
+    state: latest
+
 # Go & friends:
 - name: install go
   pacman:
