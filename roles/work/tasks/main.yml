@@ -60,3 +60,14 @@
   pacman:
     name: subversion
     state: latest
+
+# Toys:
+- name: install figlet
+  pacman:
+    name: figlet
+    state: latest
+
+- name: install cowsay
+  pacman:
+    name: cowsay
+    state: latest
