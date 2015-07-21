@@ -1,8 +1,5 @@
 ---
 
-- name: set hostname
-  hostname: "{{ hostname }}"
-
 - name: add user
   user:
     name: attila
