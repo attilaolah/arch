@@ -61,6 +61,11 @@
     name: subversion
     state: latest
 
+- name: install hub
+  pacman:
+    name: hub
+    state: latest
+
 # Toys:
 - name: install figlet
   pacman:

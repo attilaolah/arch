@@ -46,8 +46,7 @@ alias ......="cd ../../../../.."
 alias c="curl -s --dump-header /dev/stderr"
 alias gf="gofmt -w ."
 
-# Is `hub` installed?
-# eval "$(hub alias -s)"
+eval "$(hub alias -s)"
 
 
 #############
