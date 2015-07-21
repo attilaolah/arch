@@ -41,3 +41,8 @@
     dest: /etc/ssh/sshd_config
     regexp: "^#?PasswordAuthentication (yes|no)$"
     line: PasswordAuthentication no
+
+- name: restart sshd
+  service:
+    name: sshd
+    state: restarted
