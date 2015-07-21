@@ -29,3 +29,15 @@
     directory_mode: 700
     owner: attila
     group: attila
+
+- name: allow wheel group in sudoers
+  lineinfile:
+    dest: /etc/sudoers
+    regexp: "^(# )?%wheel ALL=\\(ALL\\) ALL$"
+    line: "%wheel ALL=(ALL) ALL"
+
+- name: disable password-based logins
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "^#?PasswordAuthentication (yes|no)$"
+    line: PasswordAuthentication no
