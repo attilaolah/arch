@@ -5,26 +5,42 @@
   pacman:
     update_cache: yes
 
+# ZSH:
 - name: install zsh
   pacman:
     name: zsh
     state: latest
 
+# Vim:
 - name: install vim
   pacman:
     name: vim
     state: latest
 
+# Build tools:
+- name: install gcc
+  pacman:
+    name: gcc
+    state: latest
+
+# Python & friends:
 - name: install python
   pacman:
     name: python
     state: latest
 
+- name: install python-pip
+  pacman:
+    name: python-pip
+    state: latest
+
+# Go & friends:
 - name: install go
   pacman:
     name: go
     state: latest
 
+# Source control:
 - name: install git
   pacman:
     name: git
