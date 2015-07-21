@@ -1,0 +1,16 @@
+# Go
+GOPATH="$HOME/go"
+export GOPATH
+
+# PATH
+PATH="$HOME/bin:$PATH"
+PATH="$GOPATH/bin:$PATH"
+PATH="$GOPATH/appengine:$PATH"
+PATH="$GOPATH/upstream/bin:$PATH"
+PATH="/sbin:$PATH"
+PATH="/usr/sbin:$PATH"
+PATH="/opt/bin:$PATH"
+
+for ruby in $HOME/.gem/ruby/*; do
+  PATH="$ruby/bin:$PATH"
+done

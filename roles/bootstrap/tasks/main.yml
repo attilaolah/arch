@@ -1,0 +1,34 @@
+---
+
+- name: set hostname
+  hostname: "{{ hostname }}"
+
+- name: add user
+  user:
+    name: attila
+    comment: Attila Oláh
+    groups: attila,wheel
+    shell: /bin/zsh
+    system: yes
+
+- name: add user's .profile
+  copy:
+    src: _profile
+    dest: /home/attila/.profile
+    owner: attila
+    group: attila
+
+- name: add user's .zshrc
+  copy:
+    src: _zshrc
+    dest: /home/attila/.zshrc
+    owner: attila
+    group: attila
+
+- name: add user's authorized_keys file
+  copy:
+    src: authorized_keys
+    dest: /home/attila/.ssh/authorized_keys
+    directory_mode: 700
+    owner: attila
+    group: attila

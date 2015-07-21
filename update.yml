@@ -1,0 +1,9 @@
+---
+# Only apply the `work` role for a system update.
+
+- hosts: arch
+  gather_facts: no
+  remote_user: root
+
+  roles:
+    - work

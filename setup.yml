@@ -1,0 +1,10 @@
+---
+# Fully configure a system, from zero to `work`.
+
+- hosts: arch
+  gather_facts: no
+  remote_user: root
+
+  roles:
+    - bootstrap
+    - work

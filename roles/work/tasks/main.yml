@@ -1,0 +1,46 @@
+---
+# main task file for work
+
+- name: update cache
+  pacman:
+    update_cache: yes
+
+- name: install zsh
+  pacman:
+    name: zsh
+    state: latest
+
+- name: install vim
+  pacman:
+    name: vim
+    state: latest
+
+- name: install python
+  pacman:
+    name: python
+    state: latest
+
+- name: install go
+  pacman:
+    name: go
+    state: latest
+
+- name: install git
+  pacman:
+    name: git
+    state: latest
+
+- name: install mercurial
+  pacman:
+    name: mercurial
+    state: latest
+
+- name: install bzr
+  pacman:
+    name: bzr
+    state: latest
+
+- name: install subversion
+  pacman:
+    name: subversion
+    state: latest
